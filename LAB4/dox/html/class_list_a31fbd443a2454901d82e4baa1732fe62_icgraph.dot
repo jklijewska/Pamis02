@@ -1,0 +1,17 @@
+digraph "List::Push_Front"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="List::Push_Front",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Queue::Enqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_queue.html#ad79218b6296d87515f0a487764c44111"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8hpp.html#ac3bcb770ee00a4905d76cbe15e098718"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Stos::Push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#af8c0c485dceb28e986cdc93e933ec365"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8hpp.html#a603d1d2e8cd3619abf4032fbf8cc212d"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"];
+}

@@ -1,0 +1,15 @@
+digraph "Queue::MS"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Queue::MS",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Merge_Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sort_8cpp.html#a56c34ae32541eeec0386037ecaa37a89"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Tablica::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a8598f952095406441bfd2d20e76f175c"];
+  Node2 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Merge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sort_8cpp.html#ae6edf270c00af312bbafffc1955450cc"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

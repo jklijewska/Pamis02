@@ -1,0 +1,44 @@
+# Project: lista
+# Makefile created by Dev-C++ 5.2.0.3
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o tablica.o zegar.o lista.o plik.o sort.o $(RES)
+LINKOBJ  = main.o tablica.o zegar.o lista.o plik.o sort.o $(RES)
+LIBS     = -pg -L"D:/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc  -Ofast -g3 
+INCS     = -I"D:/Dev-Cpp/MinGW32/include" 
+CXXINCS  = -I"D:/Dev-Cpp/MinGW32/include" 
+BIN      = lista.exe
+CXXFLAGS = $(CXXINCS)   -Ofast -pg -g3
+CFLAGS   = $(INCS)   -Ofast -pg -g3
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before lista.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "lista.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+tablica.o: tablica.cpp
+	$(CPP) -c tablica.cpp -o tablica.o $(CXXFLAGS)
+
+zegar.o: zegar.cpp
+	$(CPP) -c zegar.cpp -o zegar.o $(CXXFLAGS)
+
+lista.o: lista.cpp
+	$(CPP) -c lista.cpp -o lista.o $(CXXFLAGS)
+
+plik.o: plik.cpp
+	$(CPP) -c plik.cpp -o plik.o $(CXXFLAGS)
+
+sort.o: sort.cpp
+	$(CPP) -c sort.cpp -o sort.o $(CXXFLAGS)

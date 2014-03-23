@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+ 
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+
+\begin{document}
+\begin{titlepage}
+\title{Sortowanie - Laboratorium nr 4 z PAMSI}
+\author{Justyna Klijewska}
+\date{23 03 2014}
+\maketitle
+\end{titlepage}
+
+\underline{Zadanie do wykonania}
+
+W istniejącym już programie dodać sortowanie.
+\\ \\ \\
+Program był pisany w środowisku Windows. Jest to wersja na ocenę 5. Zostały zrealizowane sortowania merge sort, quicksort i heap sort. Porównanie ich złożoności obliczeniowej znajduje się poniżej. \\ \\
+\begin{tabular}{|r|c|l|}
+  \hline 
+  Sortowanie & Złożoność czasowa & Złożoność pamięciowa \\
+  \hline
+  Quicksort & O(nlogn) & Zależnie od implementacji \\
+  \hline
+  Mergesort & O(nlogn) & O(n) \\
+  \hline
+  Heapsort & O(nlogn) &	O(n) \\
+  \hline
+\end{tabular} 
+\\ \\ Tabela 1. Zależności między liczbą elementów w pliku a czasem wykonywania programu.
+\\
+\\ \\ \\ \\ 
+\textit{QUICKSORT}
+\\ \\
+Jest to sortowanie szybkie i polega na zasadzie "dziel i zwyciężaj". Jego złożoność obliczeniowa to O(nlogn). Jest jednym z najczęściej używanych ze względu na szybkość wykonywania oraz łatwość implementacji. \\
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{quick.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania sortowania}
+\label{overflow}
+\end{figure}
+
+
+\textit{MERGESORT }
+\\ \\ \\
+Jest to sortowanie przez scalanie i jego złożoność obliczeniowa to O(n log n). Podobnie jak quicksort korzysta z zasady "dziel i zwyciężaj".
+\\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{merge.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania sortowania}
+\label{overflow}
+\end{figure}
+
+
+\textit{HEAPSORT}
+\\ \\ \\
+Jest to to sortowanie przez kopcowanie. Złożoność czasowa wynosi  O(n log n), a pamięciowa – O(n). Jedną z największych jej zalet jest możliwość użycia tej samej tablicy w której znajdowały się nieposortowane elementy.
+\\ \\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{heap.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania sortowania}
+\label{overflow}
+\end{figure}
+\\
+\\ \\ \\ \\ \\ \\ \\ \\
+
+\underline {WNIOSKI:} \\
+Najpopularniejszym i najczęściej używanym sortowaniem jest quicksort. I ciężko się dziwić, gdzyż w powyższych testach wykonywał on najszybciej swoje zadanie. Nie zmienia to faktu, że podane sortowania mają podobną złożoność obliczeniową, a co za tym idzie podobny czas wykonywania programu. Gdyby porównać powyższe z sortowaniem np.: bąbelkowym róznice byłyby większe.
+\end{document}

@@ -1,0 +1,11 @@
+digraph "Tablica::Show_Tab"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Tablica::Show_Tab",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Queue::Show",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_queue.html#a2f80b1ea8c0af424d0153af7563e1c34"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Stos::Show",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#abfb03d80298013a2792bde2fd89c3863"];
+}

@@ -1,0 +1,11 @@
+digraph "List::Isempty"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="List::Isempty",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Queue::Isempty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_queue.html#ae671ac7c20b47b9a57eb008e1b946bfe"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Stos::Isempty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a8e559abb36abb64c458bdc281e273cba"];
+}

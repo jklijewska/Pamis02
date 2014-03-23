@@ -1,0 +1,30 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8cpp.html#a603d1d2e8cd3619abf4032fbf8cc212d"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Stos::Push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#af8c0c485dceb28e986cdc93e933ec365"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="List::Push_Front",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_list.html#a31fbd443a2454901d82e4baa1732fe62"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Tablica::Push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#ae1af903a66629cd0d522eb9f2fd13116"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Zegar::Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zegar.html#af747dc3a9d58207618ec877990900b80"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Zegar::Koniec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zegar.html#a8a88ddd1aa0768bfbe37217e32a01da0"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Zegar::Wynik",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zegar.html#a659d8f393442747d17aba3a5f6533c29"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Stos::HS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a0e531afe4371783988c3ba470c04f5df"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Heap_Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sort_8cpp.html#a7ac406a30a3a7a46d498f05bb173809c"];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Tablica::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a8598f952095406441bfd2d20e76f175c"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Tablica::Pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a6153881ffda3f5361c2d664622a4eff4"];
+}

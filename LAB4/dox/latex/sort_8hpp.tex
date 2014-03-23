@@ -1,0 +1,130 @@
+\hypertarget{sort_8hpp}{\section{Dokumentacja pliku C\-:/\-Users/\-Klijek/\-Desktop/\-L\-A\-B4/prj/sort.hpp}
+\label{sort_8hpp}\index{C\-:/\-Users/\-Klijek/\-Desktop/\-L\-A\-B4/prj/sort.\-hpp@{C\-:/\-Users/\-Klijek/\-Desktop/\-L\-A\-B4/prj/sort.\-hpp}}
+}
+
+
+Definicja funkcji Quick\-Sort .  
+
+
+{\ttfamily \#include \char`\"{}tablica.\-hpp\char`\"{}}\\*
+Wykres zależności załączania dla sort.\-hpp\-:
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\-:
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{sort_8hpp_a17e08e601d94bc6fce93c91bd574e717}{Quick\-\_\-\-Sort} (\hyperlink{class_tablica}{Tablica} \&T, int left, int right)
+\item 
+void \hyperlink{sort_8hpp_a7ac406a30a3a7a46d498f05bb173809c}{Heap\-\_\-\-Sort} (\hyperlink{class_tablica}{Tablica} \&T)
+\item 
+void \hyperlink{sort_8hpp_a56c34ae32541eeec0386037ecaa37a89}{Merge\-\_\-\-Sort} (\hyperlink{class_tablica}{Tablica} \&T, int left, int right)
+\item 
+void \hyperlink{sort_8hpp_ae6edf270c00af312bbafffc1955450cc}{Merge} (\hyperlink{class_tablica}{Tablica} \&T, int left, int cent, int right)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja funkcji Quick\-Sort . Definicja funkcji Merge .
+
+Definicja funkcji Merge\-Sort .
+
+Definicja funkcji Heap\-Sort .
+
+Funkcja odpowiadajaca za szybkie sortowanie. Dziala na zasadzie dziel i zwyciezaj. Dzieli ona na mniejsze czesci, nast�pnie je porownuje i zamienia.
+
+Funkcja odpowiadajaca za szybkie przez kopcowanie. Po utworzeniu kopca usuwa si� jego maksymalny wierzcholek i wstawia w jego miejsce element z konca kopca. W zwolnione dzieki temu miejsce wstawia sie obiekt maksymalny.
+
+Dzieli tablice na mniejsze cz�ci, a nast�pnie wywo�uje funkcje sortuj�c� Merge
+
+Funkcja odpowiadajaca za sortowanie przez scalanie. 
+
+Definicja w pliku \hyperlink{sort_8hpp_source}{sort.\-hpp}.
+
+
+
+\subsection{Dokumentacja funkcji}
+\hypertarget{sort_8hpp_a7ac406a30a3a7a46d498f05bb173809c}{\index{sort.\-hpp@{sort.\-hpp}!Heap\-\_\-\-Sort@{Heap\-\_\-\-Sort}}
+\index{Heap\-\_\-\-Sort@{Heap\-\_\-\-Sort}!sort.hpp@{sort.\-hpp}}
+\subsubsection[{Heap\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void Heap\-\_\-\-Sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{T}
+\end{DoxyParamCaption}
+)}}\label{sort_8hpp_a7ac406a30a3a7a46d498f05bb173809c}
+
+
+Definicja w linii 34 pliku sort.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{sort_8hpp_ae6edf270c00af312bbafffc1955450cc}{\index{sort.\-hpp@{sort.\-hpp}!Merge@{Merge}}
+\index{Merge@{Merge}!sort.hpp@{sort.\-hpp}}
+\subsubsection[{Merge}]{\setlength{\rightskip}{0pt plus 5cm}void Merge (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{T, }
+\item[{int}]{left, }
+\item[{int}]{cent, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}}\label{sort_8hpp_ae6edf270c00af312bbafffc1955450cc}
+
+
+Definicja w linii 79 pliku sort.\-cpp.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{sort_8hpp_a56c34ae32541eeec0386037ecaa37a89}{\index{sort.\-hpp@{sort.\-hpp}!Merge\-\_\-\-Sort@{Merge\-\_\-\-Sort}}
+\index{Merge\-\_\-\-Sort@{Merge\-\_\-\-Sort}!sort.hpp@{sort.\-hpp}}
+\subsubsection[{Merge\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void Merge\-\_\-\-Sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{T, }
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}}\label{sort_8hpp_a56c34ae32541eeec0386037ecaa37a89}
+
+
+Definicja w linii 125 pliku sort.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+
+\hypertarget{sort_8hpp_a17e08e601d94bc6fce93c91bd574e717}{\index{sort.\-hpp@{sort.\-hpp}!Quick\-\_\-\-Sort@{Quick\-\_\-\-Sort}}
+\index{Quick\-\_\-\-Sort@{Quick\-\_\-\-Sort}!sort.hpp@{sort.\-hpp}}
+\subsubsection[{Quick\-\_\-\-Sort}]{\setlength{\rightskip}{0pt plus 5cm}void Quick\-\_\-\-Sort (
+\begin{DoxyParamCaption}
+\item[{{\bf Tablica} \&}]{T, }
+\item[{int}]{left, }
+\item[{int}]{right}
+\end{DoxyParamCaption}
+)}}\label{sort_8hpp_a17e08e601d94bc6fce93c91bd574e717}
+
+
+Definicja w linii 3 pliku sort.\-cpp.
+
+
+
+Oto graf wywołań dla tej funkcji\-:
+
+
+
+
+Oto graf wywoływań tej funkcji\-:
+
+

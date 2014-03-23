@@ -1,0 +1,17 @@
+digraph "List::Size"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="List::Size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Queue::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_queue.html#a2b28fe3446577261546f74b7bbe3ccc6"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8hpp.html#a0f170f6dccd0a4f11578296e435f6e54"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="List::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_list.html#a7c478a92a9c02c8948e4495ab8e9acc1"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Stos::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a9861291fa460528db0dea0262bf88f69"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Write",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8hpp.html#a27e694bd359044803046c9cec1f24141"];
+}

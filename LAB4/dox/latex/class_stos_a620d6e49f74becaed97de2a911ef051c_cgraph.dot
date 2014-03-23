@@ -1,0 +1,11 @@
+digraph "Stos::Pop"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Stos::Pop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="List::Pop_Front",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_list.html#a60d28fbb02bd3fc770ba0627d9345dde"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Tablica::Pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a6153881ffda3f5361c2d664622a4eff4"];
+}
