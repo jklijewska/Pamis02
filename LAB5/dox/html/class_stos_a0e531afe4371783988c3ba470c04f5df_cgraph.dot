@@ -1,0 +1,15 @@
+digraph "Stos::HS"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Stos::HS",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Heap_Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sort_8cpp.html#a7ac406a30a3a7a46d498f05bb173809c",tooltip="Definicja funkcji Heap_Sort . "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Tablica::Push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#ae1af903a66629cd0d522eb9f2fd13116",tooltip="Definicja konstruktora Push . "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Tablica::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a8598f952095406441bfd2d20e76f175c",tooltip="Definicja metoda Size . "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Tablica::Pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a6153881ffda3f5361c2d664622a4eff4",tooltip="Definicja metody Pop . "];
+}

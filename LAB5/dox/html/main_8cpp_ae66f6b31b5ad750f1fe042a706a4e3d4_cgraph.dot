@@ -1,0 +1,35 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8cpp.html#a603d1d2e8cd3619abf4032fbf8cc212d",tooltip="Definicja funkcji Read. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Stos::Push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#af8c0c485dceb28e986cdc93e933ec365"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="List::Push_Front",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_list.html#a31fbd443a2454901d82e4baa1732fe62"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Tablica::Push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#ae1af903a66629cd0d522eb9f2fd13116",tooltip="Definicja konstruktora Push . "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Zegar::Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zegar.html#af747dc3a9d58207618ec877990900b80",tooltip="Definicja metody Start. "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Zegar::Koniec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zegar.html#a8a88ddd1aa0768bfbe37217e32a01da0",tooltip="Definicja metody Koniec. "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Zegar::Wynik",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_zegar.html#a78715c1ac3a9b593c6fd5d1a17b79308",tooltip="Definicja metody Wynik. "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Stos::MS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a16e80bfd5b01cc6febec3a94269daea5"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Merge_Sort",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sort_8cpp.html#a56c34ae32541eeec0386037ecaa37a89",tooltip="Definicja funkcji Merge . "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Tablica::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a8598f952095406441bfd2d20e76f175c",tooltip="Definicja metoda Size . "];
+  Node10 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Merge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sort_8cpp.html#ae6edf270c00af312bbafffc1955450cc",tooltip="Definicja funkcji Merge . "];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Stos::Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_stos.html#a99ef4da523be42a1305ee22275bd59e3"];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Tablica::Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tablica.html#a0d16e19bbb1516a34004071662d0dfbf",tooltip="Definicja metody Clear . "];
+}

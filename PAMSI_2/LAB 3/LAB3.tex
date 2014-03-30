@@ -1,0 +1,125 @@
+\documentclass[11pt]{article}
+ 
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+
+\begin{document}
+\begin{titlepage}
+\title{Kolejki i stosy - Laboratorium nr 3 z PAMSI}
+\author{Justyna Klijewska}
+\date{16 03 2014}
+\maketitle
+\end{titlepage}
+
+\underline{Zadanie do wykonania}
+
+Zaimplementować stos i kolejkę przy pomocy tablic i przy pomocy list. 
+\\ \\ \\
+Program był pisany w środowisku Windows. Jest to wersja na ocenę 5. Wykresy zostały wykonane w programie MatLab i wklejone jako obrazy. 
+\\ \\ \\ \\ 
+\textit{Stos: tablicowa }
+\\ \\
+
+
+\begin{tabular}{|r|l|}
+  \hline 
+  liczba elementow pliku & czas wykonania \\
+  \hline
+  10 & 0.0029 \\
+  \hline
+  100 & 0.23 \\
+  \hline
+  1000 & 0.77 \\
+  \hline
+  10000 & 9.47 \\
+  \hline
+\end{tabular} 
+\\ Tabela 1. Zależności między liczbą elementów w pliku a czasem wykonywania programu.
+\\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{TS.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania programu}
+\label{overflow}
+\end{figure}
+
+
+\textit{Stos: listowa }
+\\ \\ \\
+\begin{tabular}{|r|l|}
+  \hline 
+  liczba elementow pliku & czas wykonania \\
+  \hline
+  10 & 0.002 \\
+  \hline
+  100 & 0.19 \\
+  \hline
+  1000 & 0.96 \\
+  \hline
+  10000 & 8.73 \\
+  \hline
+\end{tabular} 
+\\ Tabela 1. Zależności między liczbą elementów w pliku a czasem wykonywania programu.
+\\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{LS.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania programu}
+\label{overflow}
+\end{figure}
+
+\textit{Kolejka: tablicowa }
+\\ \\ \\
+\begin{tabular}{|r|l|}
+  \hline 
+  liczba elementow pliku & czas wykonania \\
+  \hline
+  10 & 0.049 \\
+  \hline
+  100 & 0.23 \\
+  \hline
+  1000 & 0.97 \\
+  \hline
+  10000 & 9.05 \\
+  \hline
+\end{tabular} 
+\\ Tabela 1. Zależności między liczbą elementów w pliku a czasem wykonywania programu.
+\\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{TK.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania programu}
+\label{overflow}
+\end{figure}
+
+\textit{Kolejka: listowa }
+\\ \\ \\
+\begin{tabular}{|r|l|}
+  \hline 
+  liczba elementow pliku & czas wykonania \\
+  \hline
+  10 & 0.001 \\
+  \hline
+  100 & 0.13 \\
+  \hline
+  1000 & 0.92 \\
+  \hline
+  10000 & 8.75 \\
+  \hline
+\end{tabular} 
+\\ Tabela 1. Zależności między liczbą elementów w pliku a czasem wykonywania programu.
+\\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{TK.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania programu}
+\label{overflow}
+\end{figure}
+\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+\underline {WNIOSKI:} \\
+Wykresy zależności bardzo przypominają charakterystyki liniowe. Dużo szybsze jest użycie kolejki. Czas wczytania stosu listowego jest szybszy niż wczytania stosu tablicowego. Jeśli chodzi o kolejkę to szybciej wykonuje się tablicowa.
+\end{document}

@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+ 
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+
+\begin{document}
+\begin{titlepage}
+\title{Sortowanie - Laboratorium nr 5 z PAMSI}
+\author{Justyna Klijewska}
+\date{30 03 2014}
+\maketitle
+\end{titlepage}
+
+\underline{Zadanie do wykonania}
+
+W istniejącym już programie dodać sortowanie. Dodatkowo zmienić działanie quicksort - ma wybierać losowy element z tablicy.
+\\ \\ \\
+Program był pisany w środowisku Windows.  \\ \\
+\begin{tabular}{|r|c|c|c|l|}
+  \hline 
+  Sortowanie &  Zł cz optym & Zł cz typowa &  Zł cz pesym & Zł. pamięciowa \\
+  \hline
+  Quicksort & - & O(nlogn) & O($n ^2$) & Zależnie od implementacji \\
+  \hline
+  Mergesort & O(n) & O (n log n) & O (n log n) & O(n) \\
+  \hline
+  Heapsort & -  & O(nlogn) & - &	O(n) \\
+  \hline
+\end{tabular} 
+\\ \\ Tabela 1. Zależności między liczbą elementów w pliku a czasem wykonywania programu.
+\\
+\\ \\ \\ \\ 
+Liczby do posortowania w tablicach były wybierane losowo randn.  \\ \\ \\
+ \\ \\ \\ \\ \\
+\textit{QUICKSORT}
+\\ \\
+Jest to sortowanie szybkie i polega na zasadzie "dziel i zwyciężaj". Jego złożoność obliczeniowa to O(nlogn). Jest jednym z najczęściej używanych ze względu na szybkość wykonywania oraz łatwość implementacji. \\
+Zostały rozważone 3 warianty: \\ *optymistyczny - użycie mediany \\ *typowy - równomierny rozkład prawdopodobieństwa dla wyboru elementu z tablicy \\*pesymistyczny - zawsze wybieramy element najmniejszy lub największy
+
+\begin{tabular}{|r|c|c|l|}
+  \hline 
+  \hline
+  Ilość liczb  & Wariant optymistyczny & Wariant typowy & Wariant pesymistyczny  \\
+  \hline
+  1000 & 0 & 0 & 0  \\
+  \hline
+   10000 & 0 & 0,001 & 0,002 \\
+  \hline
+   50000 & 0,001 & 0,0028 & 0,0061 \\
+  \hline
+  100000 & 0,009 & 0,01 & 0,012 \\
+  \hline
+   500000 & 0,063 & 0,074 & 0,094 \\
+  \hline
+   1000000 & 0,23 & 0,27 & 0,29 \\
+  \hline
+\end{tabular} 
+\\ \\ Tabela 2. Zależności między liczbą elementów w pliku a czasem wykonywania programu w przypadku quicksort. Czas podany jest w sekundach.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{quick.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania sortowania}
+\label{overflow}
+\end{figure}
+
+
+\textit{MERGESORT }
+\\ \\ \\ \\ \\ \\ \\
+Jest to sortowanie przez scalanie i jego złożoność obliczeniowa to O(n log n). Podobnie jak quicksort korzysta z zasady "dziel i zwyciężaj". Zostały rozważone 3 warianty: \\ *optymistyny - dla zbiorów w miarę uporządkowanych \\ * dla zbiorów o losowym rozkładzie elementów \\ *pesymistyczny - dla zbiorów posortowanych odwrotnie
+
+\begin{tabular}{|r|c|c|l|}
+  \hline 
+  \hline
+  Ilość liczb  & Wariant optymistyczny & Wariant typowy & Wariant pesymistyczny  \\
+  \hline
+  1000 & 0 & 0 & 0,001  \\
+  \hline
+   10000 & 0,001 & 0,0035 & 0,004 \\
+  \hline
+   50000 & 0,012 & 0,0061 & 0,0098 \\
+  \hline
+  100000 & 0,017 & 0,019 & 0,02 \\
+  \hline
+   500000 & 0,093 & 0,1 & 0,13 \\
+  \hline
+   1000000 & 0,26 & 0,3 & 0,35 \\
+  \hline
+\end{tabular} 
+\\ \\ Tabela 3. Zależności między liczbą elementów w pliku a czasem wykonywania programu w przypadku mergesort. Czas podany jest w sekundach.
+\\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{merge.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania sortowania}
+\label{overflow}
+\end{figure}
+
+
+\textit{HEAPSORT}
+\\ \\ \\
+Jest to to sortowanie przez kopcowanie. Złożoność czasowa wynosi  O(n log n), a pamięciowa – O(n). Jedną z największych jej zalet jest możliwość użycia tej samej tablicy w której znajdowały się nieposortowane elementy.
+
+\begin{tabular}{|r|c|c|l|}
+  \hline 
+  \hline
+  Ilość liczb  & Wariant optymistyczny & Wariant typowy & Wariant pesymistyczny  \\
+  \hline
+  1000 & 0 & 0 & 0  \\
+  \hline
+   10000 & 0,001 & 0,003 & 0,003 \\
+  \hline
+   50000 & 0,011 & 0,0037 & 0,012 \\
+  \hline
+  100000 & 0,015 & 0,02 & 0,024 \\
+  \hline
+   500000 & 0,074 & 0,085 & 0,096 \\
+  \hline
+   1000000 & 0,3 & 0,32 & 0,34 \\
+  \hline
+\end{tabular} 
+\\ \\ Tabela 4. Zależności między liczbą elementów w pliku a czasem wykonywania programu w przypadku heapsort. Czas podany jest w sekundach.
+\\ \\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{heap.jpg}
+\caption{Wykres zależności liczby elementów w pliku od czasu wykonywania sortowania}
+\label{overflow}
+\end{figure}
+\\
+\\ \\ \\ \\ \\ 
+
+\underline {WNIOSKI:} \\
+Najpopularniejszym i najczęściej używanym sortowaniem jest quicksort. I ciężko się dziwić, gdzyż w powyższych testach wykonywał on najszybciej swoje zadanie. Nie zmienia to faktu, że podane sortowania mają podobną złożoność obliczeniową, a co za tym idzie podobny czas wykonywania programu. Gdyby porównać powyższe z sortowaniem np.: bąbelkowym róznice byłyby większe.
+Różnice pomiędzy wariantami nie są bardzo duże. Na wpływ szybkości algorytmu ma wpływ zawartość tablicy (przy użyciu tablicy posortowanej, ale odwróconej proces ten zachodzi wolniej. 
+\end{document}
