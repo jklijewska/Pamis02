@@ -1,0 +1,9 @@
+digraph "C:/Users/Klijek/Desktop/LAB6/prj" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_12f636559b4d569b5261dc29cdd09eb1 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="LAB6" fontname="Helvetica", fontsize="10", URL="dir_12f636559b4d569b5261dc29cdd09eb1.html"]
+  dir_b1f5dbfc2b702c94ce08a340687e698f [shape=box, label="prj", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_b1f5dbfc2b702c94ce08a340687e698f.html"];
+  }
+}

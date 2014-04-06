@@ -1,0 +1,19 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Tab_Aso::IsEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tab___aso.html#aa2fc214dc439b221c3d2805229c25b5d"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Tab_Aso::Size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tab___aso.html#acd053d93f75de2d92a343a289f924b2b",tooltip="Metoda Size, zwraca iloœæ elementów w tablicy. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Tab_Aso::AddKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tab___aso.html#a13ed5efb41c50087eb40d15f7b858734",tooltip="Metoda AddKey, dodaje parê, klucz - wartoœæ do tablicy. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Tab_Aso::DeleteKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tab___aso.html#aeb65c192e30a80ad78b4d16eede9a1f9",tooltip="Metoda DeleteKey, usuwa parê, klucz - wartoœæ. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Tab_Aso::Change",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tab___aso.html#aecbd56e2a0ff2239207e380eacd26580",tooltip="Metoda Change zmienia wartoœæ dane na indane w podanym kluczu inkey. "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Tab_Aso::TakeKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tab___aso.html#aa949662ff435df2b31ea91bc19c28baf",tooltip="Metoda TakeKey, zwraca wskaŸnik na parê klucz - wartoœæ. "];
+}
