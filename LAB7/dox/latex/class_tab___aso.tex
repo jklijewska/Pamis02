@@ -1,0 +1,145 @@
+\hypertarget{class_tab___aso}{\section{Tab\-\_\-\-Aso$<$ T\-\_\-\-K, T\-\_\-\-D $>$ Class Template Reference}
+\label{class_tab___aso}\index{Tab\-\_\-\-Aso$<$ T\-\_\-\-K, T\-\_\-\-D $>$@{Tab\-\_\-\-Aso$<$ T\-\_\-\-K, T\-\_\-\-D $>$}}
+}
+
+
+Szablon klasy obs³uguj¹cy tablice asocjacyjn¹ opart¹ na liœcie jednokierunkowej gdzie elementem listy jest struktura \hyperlink{struct_tab_aso_ele}{Tab\-Aso\-Ele}.  
+
+
+
+
+{\ttfamily \#include $<$tab\-Aso.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tab___aso_a8a4faa71b3dfbc4046e12bbd33a63f04}{Tab\-\_\-\-Aso} ()
+\begin{DoxyCompactList}\small\item\em Kontruktor klasy \hyperlink{class_tab___aso}{Tab\-\_\-\-Aso}. \end{DoxyCompactList}\item 
+\hypertarget{class_tab___aso_ab6601528f40554e7d288d780682ffd0c}{\hyperlink{class_tab___aso_ab6601528f40554e7d288d780682ffd0c}{$\sim$\-Tab\-\_\-\-Aso} ()}\label{class_tab___aso_ab6601528f40554e7d288d780682ffd0c}
+
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \hyperlink{class_tab___aso}{Tab\-\_\-\-Aso}. \end{DoxyCompactList}\item 
+void \hyperlink{class_tab___aso_a13ed5efb41c50087eb40d15f7b858734}{Add\-Key} (T\-\_\-\-K inkey, T\-\_\-\-D indane)
+\begin{DoxyCompactList}\small\item\em Metoda Add\-Key, dodaje parê, klucz -\/ wartoœæ do tablicy. \end{DoxyCompactList}\item 
+void \hyperlink{class_tab___aso_aeb65c192e30a80ad78b4d16eede9a1f9}{Delete\-Key} (T\-\_\-\-K inkey)
+\begin{DoxyCompactList}\small\item\em Metoda Delete\-Key, usuwa parê, klucz -\/ wartoœæ. \end{DoxyCompactList}\item 
+\hyperlink{struct_tab_aso_ele}{Tab\-Aso\-Ele}$<$ T\-\_\-\-K, T\-\_\-\-D $>$ $\ast$ \hyperlink{class_tab___aso_aa949662ff435df2b31ea91bc19c28baf}{Take\-Key} (T\-\_\-\-K inkey)
+\begin{DoxyCompactList}\small\item\em Metoda Take\-Key, zwraca wskaŸnik na parê klucz -\/ wartoœæ. \end{DoxyCompactList}\item 
+\hypertarget{class_tab___aso_aa2fc214dc439b221c3d2805229c25b5d}{bool {\bfseries Is\-Empty} ()}\label{class_tab___aso_aa2fc214dc439b221c3d2805229c25b5d}
+
+\item 
+void \hyperlink{class_tab___aso_aecbd56e2a0ff2239207e380eacd26580}{Change} (T\-\_\-\-K inkey, T\-\_\-\-D indane)
+\begin{DoxyCompactList}\small\item\em Metoda Change. \end{DoxyCompactList}\item 
+int \hyperlink{class_tab___aso_acd053d93f75de2d92a343a289f924b2b}{Size} ()
+\begin{DoxyCompactList}\small\item\em Metoda Size,. \end{DoxyCompactList}\item 
+\hyperlink{struct_tab_aso_ele}{Tab\-Aso\-Ele}$<$ T\-\_\-\-K, T\-\_\-\-D $>$ $\ast$ \hyperlink{class_tab___aso_acd9f326d738bd2be240c8650c77388e3}{operator\mbox{[}$\,$\mbox{]}} (T\-\_\-\-K inkey)
+\begin{DoxyCompactList}\small\item\em Przeci¹¿enie operatora \mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{struct_tab_aso_ele}{Tab\-Aso\-Ele}$<$ T\-\_\-\-K, T\-\_\-\-D $>$ $\ast$ \hyperlink{class_tab___aso_a5cc0cab1284ef9c30200dec328e996ec}{operator\mbox{[}$\,$\mbox{]}} (int index)
+\begin{DoxyCompactList}\small\item\em Przeci¹¿enie operatora \mbox{[}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T\-\_\-\-K, class T\-\_\-\-D$>$class Tab\-\_\-\-Aso$<$ T\-\_\-\-K, T\-\_\-\-D $>$}
+
+Szablon klasy obs³uguj¹cy tablice asocjacyjn¹ opart¹ na liœcie jednokierunkowej gdzie elementem listy jest struktura \hyperlink{struct_tab_aso_ele}{Tab\-Aso\-Ele}. 
+
+T\-\_\-\-K -\/ Typ danych klucza T\-\_\-\-D -\/ Typ danych wartoœci 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tab___aso_a8a4faa71b3dfbc4046e12bbd33a63f04}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}}
+\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{Tab\-\_\-\-Aso}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::{\bf Tab\-\_\-\-Aso} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_a8a4faa71b3dfbc4046e12bbd33a63f04}
+
+
+Kontruktor klasy \hyperlink{class_tab___aso}{Tab\-\_\-\-Aso}. 
+
+Przy tworzeniu nowego obiektu tej klasy dodaje stra¿nika który nie wskazuje na nic, natomiast koniec i pocz¹tek listy wskazuje na stra¿nika. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tab___aso_a13ed5efb41c50087eb40d15f7b858734}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Add\-Key@{Add\-Key}}
+\index{Add\-Key@{Add\-Key}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{Add\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ void {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::Add\-Key (
+\begin{DoxyParamCaption}
+\item[{T\-\_\-\-K}]{inkey, }
+\item[{T\-\_\-\-D}]{indane}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_a13ed5efb41c50087eb40d15f7b858734}
+
+
+Metoda Add\-Key, dodaje parê, klucz -\/ wartoœæ do tablicy. 
+
+key -\/ klucz dane -\/ wartoœæ \hypertarget{class_tab___aso_aecbd56e2a0ff2239207e380eacd26580}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Change@{Change}}
+\index{Change@{Change}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{Change}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ void {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::Change (
+\begin{DoxyParamCaption}
+\item[{T\-\_\-\-K}]{inkey, }
+\item[{T\-\_\-\-D}]{indane}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_aecbd56e2a0ff2239207e380eacd26580}
+
+
+Metoda Change. 
+
+zmienia wartoœæ dane na indane w podanym kluczu inkey \hypertarget{class_tab___aso_aeb65c192e30a80ad78b4d16eede9a1f9}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Delete\-Key@{Delete\-Key}}
+\index{Delete\-Key@{Delete\-Key}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{Delete\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ void {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::Delete\-Key (
+\begin{DoxyParamCaption}
+\item[{T\-\_\-\-K}]{inkey}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_aeb65c192e30a80ad78b4d16eede9a1f9}
+
+
+Metoda Delete\-Key, usuwa parê, klucz -\/ wartoœæ. 
+
+key -\/ klucz \hypertarget{class_tab___aso_acd9f326d738bd2be240c8650c77388e3}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ {\bf Tab\-Aso\-Ele}$<$ T\-\_\-\-K, T\-\_\-\-D $>$ $\ast$ {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{T\-\_\-\-K}]{inkey}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_acd9f326d738bd2be240c8650c77388e3}
+
+
+Przeci¹¿enie operatora \mbox{[}\mbox{]}. 
+
+Wyszukuje element po wartoœci inkey i zwraca jego wskaŸnik je¿eli istnieje. Je¿eli taki element nie istnieje, zwraca wskaŸnik na stra¿nika. \hypertarget{class_tab___aso_a5cc0cab1284ef9c30200dec328e996ec}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ {\bf Tab\-Aso\-Ele}$<$ T\-\_\-\-K, T\-\_\-\-D $>$ $\ast$ {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_a5cc0cab1284ef9c30200dec328e996ec}
+
+
+Przeci¹¿enie operatora \mbox{[}\mbox{]}. 
+
+Zwraca wskaŸnik na element pod podanym indeksem index. W przypadku gdy tablica jest pusta, lub index przekracza iloœæ elementów w tablicy, zwraca wskaŸnik na stra¿nika. \hypertarget{class_tab___aso_acd053d93f75de2d92a343a289f924b2b}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Size@{Size}}
+\index{Size@{Size}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ int {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_acd053d93f75de2d92a343a289f924b2b}
+
+
+Metoda Size,. 
+
+zwraca iloœæ elementów w tablicy. \hypertarget{class_tab___aso_aa949662ff435df2b31ea91bc19c28baf}{\index{Tab\-\_\-\-Aso@{Tab\-\_\-\-Aso}!Take\-Key@{Take\-Key}}
+\index{Take\-Key@{Take\-Key}!Tab_Aso@{Tab\-\_\-\-Aso}}
+\subsubsection[{Take\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T\-\_\-\-K , class T\-\_\-\-D $>$ {\bf Tab\-Aso\-Ele}$<$ T\-\_\-\-K, T\-\_\-\-D $>$ $\ast$ {\bf Tab\-\_\-\-Aso}$<$ T\-\_\-\-K, T\-\_\-\-D $>$\-::Take\-Key (
+\begin{DoxyParamCaption}
+\item[{T\-\_\-\-K}]{inkey}
+\end{DoxyParamCaption}
+)}}\label{class_tab___aso_aa949662ff435df2b31ea91bc19c28baf}
+
+
+Metoda Take\-Key, zwraca wskaŸnik na parê klucz -\/ wartoœæ. 
+
+key -\/ klucz Zwraca parê klucz -\/ wartoœæ je¿eli podany klucz istnieje Je¿eli tablica jest pusta, lub klucz nie istnieje, zwraca wskaŸnik na stra¿nika. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Klijek/\-Desktop/\-L\-A\-B7/prj/\hyperlink{tab_aso_8hpp}{tab\-Aso.\-hpp}\end{DoxyCompactItemize}

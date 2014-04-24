@@ -1,0 +1,11 @@
+10
+Maciek 0
+Pawel 9
+Robot 8
+Erwin 7
+Drewno 6
+Ada 5
+Zuzia 4
+Monika 3
+Klijek 2
+Gabriel 1

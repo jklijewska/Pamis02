@@ -1,0 +1,41 @@
+# Project: AllInOne
+# Makefile created by Dev-C++ 5.2.0.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o BST.o hasz.o plik.o zegar.o $(RES)
+LINKOBJ  = main.o BST.o hasz.o plik.o zegar.o $(RES)
+LIBS     = -L"D:/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc  
+INCS     = -I"D:/Dev-Cpp/MinGW32/include" 
+CXXINCS  = -I"D:/Dev-Cpp/MinGW32/include" 
+BIN      = AllInOne.exe
+CXXFLAGS = $(CXXINCS)   -traditional-cpp
+CFLAGS   = $(INCS)   -traditional-cpp
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before AllInOne.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "AllInOne.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+BST.o: BST.cpp
+	$(CPP) -c BST.cpp -o BST.o $(CXXFLAGS)
+
+hasz.o: hasz.cpp
+	$(CPP) -c hasz.cpp -o hasz.o $(CXXFLAGS)
+
+plik.o: plik.cpp
+	$(CPP) -c plik.cpp -o plik.o $(CXXFLAGS)
+
+zegar.o: zegar.cpp
+	$(CPP) -c zegar.cpp -o zegar.o $(CXXFLAGS)

@@ -1,0 +1,19 @@
+digraph "BST::~BST"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BST::~BST",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="BST::DeleteKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_s_t.html#a9fc8f734b86958c96a3b2896ac6117a3",tooltip="Metoda DeleteKey. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="BST::TakeKey",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_s_t.html#afdab435b1437c0dc9a99318670658883",tooltip="Metoda TakeKey. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="BST::prev",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_s_t.html#ac9741aaabbbf9da9bf179c8f8b2430e4",tooltip="Metoda prev. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="BST::maxN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_s_t.html#af2d2ab24cf760c680bad9a665e478e09",tooltip="Metoda maxN. "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="BST::next",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_s_t.html#abf32ad40eb28fd4dc67658173eb86e78",tooltip="Metoda next. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="BST::minN",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_s_t.html#ad4cb87dd7e870ae8bb6a5ee335114fe2",tooltip="Metoda minN. "];
+}

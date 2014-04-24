@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+ 
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+
+\begin{document}
+\begin{titlepage}
+\title{Tablica asocjacyjna, haszująca oraz drzewa binarne BST - Laboratorium nr 7 z PAMSI}
+\author{Justyna Klijewska}
+\date{22 04 2014}
+\maketitle
+\end{titlepage}
+\section{Wstęp}
+Celem ćwiczenia było przetestowanie implementacji (zmierzenie poszczególnych czasów) za pomocą: \\
+- tablicy asocjacyjnej (wykonanej w tym przypadku na liście) \\ -tablicy haszującej \\ -drzewa binarnego BST.
+Program został przetestowany w środowisku Windows.
+
+\section{Teoria}
+\underline {Drzewo binarne} \\ \\
+W teorii grafów jest to drzewo, w którym stopień każdego wierzchołka wynosi maksymalnie 2. W najgorszym przypadku jego złożoność jest liniowa - dzieje się tak, kiedy drzewo składa się tylko z jednej gałęzi. W przypadku optymistycznym tak konstruujemy drzewo, aby zawsze po lewej stronie znajdowały się elementy nie większe, a po prawej większe. Następnie wyszukując dany element odrzucamy zawsze po połowie naszych elementów, co wpływa na szybki czas.
+\\ \\
+\underline {Tablica haszująca} \\ \\
+Ponieważ zmieszczenie wszystkich kluczy i elementów dużej tablicy w pamięci byłoby niemożliwe, stosujemy tablicę haszującą. Dzięki temu możemy uzyskać szybki dostęp do przechowywanych informacji. W najprostszym przypadku wartość funkcji mieszającej, obliczona dla danego klucza, wyznacza dokładnie indeks szukanej informacji w tablicy. Jeżeli miejsce wskazywane przez obliczony indeks jest puste, to poszukiwanej informacji nie ma w tablicy. W ten sposób wyszukiwanie elementu ma złożoność czasową O(1). Jednak w sytuacji tej pojawia się problem \textbf {kolizji}, to znaczy przypisania przez funkcję mieszającą tej samej wartości dwóm różnym kluczom. Pesymistyczny przypadek to taki, kiedy mamy liniową złożoność, a optymistyczny kiedy jest ona zależna tylko od czasu wykonywaniu funkcji haszującej. 
+\\ \\ \\
+\section{Tabele pomiarowe, wykresy}
+\underline{Tablica asocjacyjna} \\ \\
+\begin{tabular}{|c|c|}
+  \hline
+  Ilość danych & Czas [s] \\
+  \hline \hline
+  10 & 0 \\ \hline
+  100 & 0.001\\ \hline
+  1000 & 0.002 \\ \hline
+  10000 & 0.031 \\ \hline
+  100000 & 0.400 \\ \hline
+  1000000 & 3.921 \\ \hline
+  
+  \hline
+  \end{tabular} 
+\\ \\ \\
+\underline{Tablica haszująca} \\ \\
+\begin{tabular}{|c|c|} 
+  \hline
+  Ilość danych & Czas [s] \\
+  \hline \hline
+  10 & 0 \\ \hline
+  100 & 0.001\\  \hline
+  1000 & 0.002\\  \hline
+  10000 & 0.023\\  \hline
+  100000 & 0.291 \\ \hline
+  1000000 & 3.117 \\ \hline
+  \hline
+  \end{tabular} 
+ \\ \\ \\
+\underline{Drzewo binarne BST} \\ \\
+\begin{tabular}{|c|c|}
+  \hline
+  Ilość danych & Czas [s] \\
+  \hline \hline
+  10 & 0 \\ \hline
+  100 & 0.001\\  \hline
+  1000 & 0.002\\  \hline
+  10000 & 0.029\\  \hline
+  100000 & 0.362 \\ \hline
+  1000000 & 3.887 \\ \hline
+  \hline
+  \end{tabular} 
+\\ \\ \\  \\ \\ \\ \\ \\ \\
+ \underline{Wykres dla powyższych algorytmów}
+ \\
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=90mm]{porow.jpg}
+\caption{Wykres zależności liczby elementów od czasu implementacji dla powyższych algorytmów.}
+\label{overflow}
+\end{figure}
+
+\section{Wnioski}
+\begin{itemize}
+\item Przedstawione powyżej algorytmy cechują się dużą szybkością (nawet dla milionowego rozmiaru danych wykonanie algorytmu nie trwa długo). 
+\item Z powodu szybkiego wyszukiwania powyższe algorytmy wykorzystuje się przy tworzeniu słowników.
+\item Przy dużej ilości danych, można zauważyć, że tablica haszująca jest efektywniejsza niż drzewo binarne. 
+\item Powyższe algorytmy mają złożoność obliczeniową: \\ \\
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  Algorytm & Złożoność &Złożoność& Złożoność \\
+  &Pesymistyczna & Typowa &Optymistyczna \\ \hline
+  \hline 
+  T. asocjacyjna&&O(log2n)& \\ \hline
+  Drzewo binarne BST&O(n)&&O(log2n)\\ \hline
+  T.haszująca&O(n)&&O(1) \\ \hline
+  \hline
+  \end{tabular} 
+\end{itemize}
+
+\end{document}
