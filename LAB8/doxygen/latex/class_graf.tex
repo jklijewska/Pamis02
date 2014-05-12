@@ -1,0 +1,254 @@
+\hypertarget{class_graf}{\section{Graf Class Reference}
+\label{class_graf}\index{Graf@{Graf}}
+}
+
+
+Klasa reprezentuje graf nieskierowany.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_graf_afca25e4667ca9588002cdd364a2b7708}{Wyswietl\-Graf} ()
+\begin{DoxyCompactList}\small\item\em Wyœwietla macierz dwuwymiarow¹ i pokazuje zwi¹zki pomiêdzy wierzcho³kami. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a9eade37235d084d322ef28cca16bfdcd}{Ilosc\-Krawedzi} (int K)
+\begin{DoxyCompactList}\small\item\em Zapisuje ile krawêdzi bêdzie zawiera³ graf. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_aa1516df9c4d59f006792d25fc239aaa7}{Stworz\-Graf} (int M)
+\begin{DoxyCompactList}\small\item\em Tworzy macierz dwuwymiarow¹ o rozmiarze M. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a54d95d2274d0906ef7e60950c7004c29}{Dodaj\-Krawedz} (int W1, int W2, int C)
+\begin{DoxyCompactList}\small\item\em £¹czy dwa wierzcho³ki \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a6dc584aaeb0668221c23694789c21d0e}{Usun\-Krawedz} (int W1, int W2)
+\begin{DoxyCompactList}\small\item\em Usuwa po³¹czenie pomiêdzy dwoma wierzcho³kami. \end{DoxyCompactList}\item 
+bool \hyperlink{class_graf_a470a9eb57ad4ff0a4eb8af73932d7e36}{Czy\-Polaczone} (int W1, int W2)
+\item 
+void \hyperlink{class_graf_a5a6397b96ee579415707bfa72737e8af}{Sasiedztwo} (int W)
+\begin{DoxyCompactList}\small\item\em Sprawdza i wypisuje s¹siedztwo wierzcho³ka. \end{DoxyCompactList}\item 
+void \hyperlink{class_graf_a53dbabccd3745e38b45c46e29e301f8e}{D\-F\-S} (int W)
+\item 
+void \hyperlink{class_graf_aac1325dd0ba799888beee5f93b621192}{B\-F\-S} (int W)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa reprezentuje graf nieskierowany. 
+
+\hyperlink{class_graf}{Graf} jest zaimplementowany na macierzy s¹siedztwa 
+
+Definition at line 15 of file graf.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graf_aac1325dd0ba799888beee5f93b621192}{\index{Graf@{Graf}!B\-F\-S@{B\-F\-S}}
+\index{B\-F\-S@{B\-F\-S}!Graf@{Graf}}
+\subsubsection[{B\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-B\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aac1325dd0ba799888beee5f93b621192}
+/brief Algorytm przeszukania grafu w szerz
+
+Algorytm przeszukuje graf i wyœwietla œcie¿ke kolejno odwiedzonych wierzcho³ków
+
+/param W -\/ wierzcho³ek pocz¹tkowy 
+
+Definition at line 115 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a470a9eb57ad4ff0a4eb8af73932d7e36}{\index{Graf@{Graf}!Czy\-Polaczone@{Czy\-Polaczone}}
+\index{Czy\-Polaczone@{Czy\-Polaczone}!Graf@{Graf}}
+\subsubsection[{Czy\-Polaczone}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Czy\-Polaczone (
+\begin{DoxyParamCaption}
+\item[{int}]{W1, }
+\item[{int}]{W2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a470a9eb57ad4ff0a4eb8af73932d7e36}
+/brief Sprawdza czy dwa wierzcho³ki s¹ ze sob¹ po³¹czone
+
+/param W1 -\/ wierzcho³ek pocz¹tkowy krawêdzi /param W2 -\/ wierzcho³ek koñcowy krawêdzi 
+
+Definition at line 62 of file graf.\-cpp.
+
+\hypertarget{class_graf_a53dbabccd3745e38b45c46e29e301f8e}{\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
+\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
+\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-D\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a53dbabccd3745e38b45c46e29e301f8e}
+/brief Algorytm przeszukania grafu w g³¹b
+
+Algorytm przeszukuje graf i wyœwietla œcie¿ke kolejno odwiedzonych wierzcho³ków
+
+/param W -\/ wierzcho³ek pocz¹tkowy 
+
+Definition at line 84 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a54d95d2274d0906ef7e60950c7004c29}{\index{Graf@{Graf}!Dodaj\-Krawedz@{Dodaj\-Krawedz}}
+\index{Dodaj\-Krawedz@{Dodaj\-Krawedz}!Graf@{Graf}}
+\subsubsection[{Dodaj\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Dodaj\-Krawedz (
+\begin{DoxyParamCaption}
+\item[{int}]{W1, }
+\item[{int}]{W2, }
+\item[{int}]{C}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a54d95d2274d0906ef7e60950c7004c29}
+
+
+£¹czy dwa wierzcho³ki 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W1} & -\/ wierzcho³ek pocz¹tkowy krawêdzi \\
+\hline
+{\em W2} & -\/ wierzcho³ek koñcowy krawêdzi \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a9eade37235d084d322ef28cca16bfdcd}{\index{Graf@{Graf}!Ilosc\-Krawedzi@{Ilosc\-Krawedzi}}
+\index{Ilosc\-Krawedzi@{Ilosc\-Krawedzi}!Graf@{Graf}}
+\subsubsection[{Ilosc\-Krawedzi}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Ilosc\-Krawedzi (
+\begin{DoxyParamCaption}
+\item[{int}]{K}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a9eade37235d084d322ef28cca16bfdcd}
+
+
+Zapisuje ile krawêdzi bêdzie zawiera³ graf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em K} & -\/ Iloœæ krawêdzi w grafie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a5a6397b96ee579415707bfa72737e8af}{\index{Graf@{Graf}!Sasiedztwo@{Sasiedztwo}}
+\index{Sasiedztwo@{Sasiedztwo}!Graf@{Graf}}
+\subsubsection[{Sasiedztwo}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Sasiedztwo (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a5a6397b96ee579415707bfa72737e8af}
+
+
+Sprawdza i wypisuje s¹siedztwo wierzcho³ka. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W} & -\/ wierzcho³ek którego s¹siedztwa szukamy \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_aa1516df9c4d59f006792d25fc239aaa7}{\index{Graf@{Graf}!Stworz\-Graf@{Stworz\-Graf}}
+\index{Stworz\-Graf@{Stworz\-Graf}!Graf@{Graf}}
+\subsubsection[{Stworz\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Stworz\-Graf (
+\begin{DoxyParamCaption}
+\item[{int}]{M}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aa1516df9c4d59f006792d25fc239aaa7}
+
+
+Tworzy macierz dwuwymiarow¹ o rozmiarze M. 
+
+M jest jednoczeœnie iloœci¹ wierzcho³ków
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & -\/ Iloœæ wierzcho³ków oraz rozmiar macierzy \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a6dc584aaeb0668221c23694789c21d0e}{\index{Graf@{Graf}!Usun\-Krawedz@{Usun\-Krawedz}}
+\index{Usun\-Krawedz@{Usun\-Krawedz}!Graf@{Graf}}
+\subsubsection[{Usun\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Usun\-Krawedz (
+\begin{DoxyParamCaption}
+\item[{int}]{W1, }
+\item[{int}]{W2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a6dc584aaeb0668221c23694789c21d0e}
+
+
+Usuwa po³¹czenie pomiêdzy dwoma wierzcho³kami. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em W1} & -\/ wierzcho³ek pocz¹tkowy krawêdzi \\
+\hline
+{\em W2} & -\/ wierzcho³ek koñcowy krawêdzi \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file graf.\-cpp.
+
+\hypertarget{class_graf_afca25e4667ca9588002cdd364a2b7708}{\index{Graf@{Graf}!Wyswietl\-Graf@{Wyswietl\-Graf}}
+\index{Wyswietl\-Graf@{Wyswietl\-Graf}!Graf@{Graf}}
+\subsubsection[{Wyswietl\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-Wyswietl\-Graf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_afca25e4667ca9588002cdd364a2b7708}
+
+
+Wyœwietla macierz dwuwymiarow¹ i pokazuje zwi¹zki pomiêdzy wierzcho³kami. 
+
+
+
+Definition at line 3 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Klijek/\-Documents/\-Git\-Hub/\-Pamis02/\-L\-A\-B8/prj/\hyperlink{graf_8hpp}{graf.\-hpp}\item 
+C\-:/\-Users/\-Klijek/\-Documents/\-Git\-Hub/\-Pamis02/\-L\-A\-B8/prj/\hyperlink{graf_8cpp}{graf.\-cpp}\end{DoxyCompactItemize}

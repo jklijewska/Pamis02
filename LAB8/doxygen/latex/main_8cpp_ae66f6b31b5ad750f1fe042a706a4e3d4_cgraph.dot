@@ -1,0 +1,21 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Graf::StworzGraf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#aa1516df9c4d59f006792d25fc239aaa7",tooltip="Tworzy macierz dwuwymiarow¹ o rozmiarze M. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Graf::IloscKrawedzi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a9eade37235d084d322ef28cca16bfdcd",tooltip="Zapisuje ile krawêdzi bêdzie zawiera³ graf. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Graf::DodajKrawedz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a54d95d2274d0906ef7e60950c7004c29",tooltip="£¹czy dwa wierzcho³ki "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Graf::WyswietlGraf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#afca25e4667ca9588002cdd364a2b7708",tooltip="Wyœwietla macierz dwuwymiarow¹ i pokazuje zwi¹zki pomiêdzy wierzcho³kami. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Graf::Sasiedztwo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a5a6397b96ee579415707bfa72737e8af",tooltip="Sprawdza i wypisuje s¹siedztwo wierzcho³ka. "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Graf::DFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a53dbabccd3745e38b45c46e29e301f8e"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Graf::BFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#aac1325dd0ba799888beee5f93b621192"];
+}

@@ -1,0 +1,9 @@
+digraph "C:/Users/Klijek/Documents/GitHub/Pamis02/LAB8/prj" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3091424cc68f55066867828a66c5dc19 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="LAB8" fontname="Helvetica", fontsize="10", URL="dir_3091424cc68f55066867828a66c5dc19.html"]
+  dir_a15df35bb3b5dedff30c55ce2e021e07 [shape=box, label="prj", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_a15df35bb3b5dedff30c55ce2e021e07.html"];
+  }
+}

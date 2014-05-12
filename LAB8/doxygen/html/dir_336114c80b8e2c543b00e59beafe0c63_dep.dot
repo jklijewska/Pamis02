@@ -1,0 +1,13 @@
+digraph "C:/Users/Klijek/Documents/GitHub/Pamis02" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_582fd6dc39201e627984718ec644327f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="GitHub" fontname="Helvetica", fontsize="10", URL="dir_582fd6dc39201e627984718ec644327f.html"]
+  subgraph clusterdir_336114c80b8e2c543b00e59beafe0c63 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_336114c80b8e2c543b00e59beafe0c63.html"];
+    dir_336114c80b8e2c543b00e59beafe0c63 [shape=plaintext label="Pamis02"];
+    dir_3091424cc68f55066867828a66c5dc19 [shape=box label="LAB8" color="red" fillcolor="white" style="filled" URL="dir_3091424cc68f55066867828a66c5dc19.html"];
+  }
+  }
+}
