@@ -1,0 +1,222 @@
+\hypertarget{class_graf}{\section{Graf Class Reference}
+\label{class_graf}\index{Graf@{Graf}}
+}
+
+
+Deklaracja klasy \hyperlink{class_graf}{Graf}.  
+
+
+
+
+{\ttfamily \#include $<$graf.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_graf_a99997a888ada93f1c566555bea5d49fe}{Graf} (int M)
+\begin{DoxyCompactList}\small\item\em Konstruktor grafu. \end{DoxyCompactList}\item 
+\hyperlink{class_graf_a4ff3904fd04f367ac0219b52719c567e}{$\sim$\-Graf} ()
+\item 
+bool \hyperlink{class_graf_a0002b93180c77232872de7f0d8a14282}{Dodaj\-Wierzcholek} (int W)
+\item 
+bool \hyperlink{class_graf_abb79067f8131701f5d42d88206486a5b}{Dodaj\-Krawedz} (int W1, int W2, double C)
+\item 
+bool \hyperlink{class_graf_afe6b63700e9e90b4432749a6a4ac14f5}{Usun\-Krawedz} (int W1, int W2)
+\item 
+bool \hyperlink{class_graf_ad46ff4c28754fbaf97702ef5dc1f71fb}{Usun\-Wierzcholek} (int W)
+\item 
+double \hyperlink{class_graf_a4546d2b7612f96df3a0ace5bc2c93553}{Czy\-Polaczone} (int W1, int W2)
+\item 
+list$<$ int $>$ \hyperlink{class_graf_ade291b5dec10139fdc61a043ebd340ca}{Sasiedztwo} (int W)
+\item 
+const int \hyperlink{class_graf_ad6271a1b664eec00682018761ca0437c}{Rozmiar} () const 
+\item 
+void \hyperlink{class_graf_aac1325dd0ba799888beee5f93b621192}{B\-F\-S} (int W)
+\item 
+void \hyperlink{class_graf_a53dbabccd3745e38b45c46e29e301f8e}{D\-F\-S} (int W)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Deklaracja klasy \hyperlink{class_graf}{Graf}. 
+
+Klasa odpowiedzialna za dodawanie wierzcholkow, krawedzi itd. 
+
+Definition at line 14 of file graf.\-hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_graf_a99997a888ada93f1c566555bea5d49fe}{\index{Graf@{Graf}!Graf@{Graf}}
+\index{Graf@{Graf}!Graf@{Graf}}
+\subsubsection[{Graf}]{\setlength{\rightskip}{0pt plus 5cm}Graf\-::\-Graf (
+\begin{DoxyParamCaption}
+\item[{int}]{M}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a99997a888ada93f1c566555bea5d49fe}
+
+
+Konstruktor grafu. 
+
+
+
+Definition at line 12 of file graf.\-cpp.
+
+\hypertarget{class_graf_a4ff3904fd04f367ac0219b52719c567e}{\index{Graf@{Graf}!$\sim$\-Graf@{$\sim$\-Graf}}
+\index{$\sim$\-Graf@{$\sim$\-Graf}!Graf@{Graf}}
+\subsubsection[{$\sim$\-Graf}]{\setlength{\rightskip}{0pt plus 5cm}Graf\-::$\sim$\-Graf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a4ff3904fd04f367ac0219b52719c567e}
+
+
+Definition at line 28 of file graf.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_graf_aac1325dd0ba799888beee5f93b621192}{\index{Graf@{Graf}!B\-F\-S@{B\-F\-S}}
+\index{B\-F\-S@{B\-F\-S}!Graf@{Graf}}
+\subsubsection[{B\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-B\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_aac1325dd0ba799888beee5f93b621192}
+
+
+Definition at line 143 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a4546d2b7612f96df3a0ace5bc2c93553}{\index{Graf@{Graf}!Czy\-Polaczone@{Czy\-Polaczone}}
+\index{Czy\-Polaczone@{Czy\-Polaczone}!Graf@{Graf}}
+\subsubsection[{Czy\-Polaczone}]{\setlength{\rightskip}{0pt plus 5cm}double Graf\-::\-Czy\-Polaczone (
+\begin{DoxyParamCaption}
+\item[{int}]{W1, }
+\item[{int}]{W2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a4546d2b7612f96df3a0ace5bc2c93553}
+
+
+Definition at line 78 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a53dbabccd3745e38b45c46e29e301f8e}{\index{Graf@{Graf}!D\-F\-S@{D\-F\-S}}
+\index{D\-F\-S@{D\-F\-S}!Graf@{Graf}}
+\subsubsection[{D\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}void Graf\-::\-D\-F\-S (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a53dbabccd3745e38b45c46e29e301f8e}
+
+
+Definition at line 108 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_abb79067f8131701f5d42d88206486a5b}{\index{Graf@{Graf}!Dodaj\-Krawedz@{Dodaj\-Krawedz}}
+\index{Dodaj\-Krawedz@{Dodaj\-Krawedz}!Graf@{Graf}}
+\subsubsection[{Dodaj\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Dodaj\-Krawedz (
+\begin{DoxyParamCaption}
+\item[{int}]{W1, }
+\item[{int}]{W2, }
+\item[{double}]{C}
+\end{DoxyParamCaption}
+)}}\label{class_graf_abb79067f8131701f5d42d88206486a5b}
+
+
+Definition at line 49 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_a0002b93180c77232872de7f0d8a14282}{\index{Graf@{Graf}!Dodaj\-Wierzcholek@{Dodaj\-Wierzcholek}}
+\index{Dodaj\-Wierzcholek@{Dodaj\-Wierzcholek}!Graf@{Graf}}
+\subsubsection[{Dodaj\-Wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Dodaj\-Wierzcholek (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_a0002b93180c77232872de7f0d8a14282}
+
+
+Definition at line 40 of file graf.\-cpp.
+
+\hypertarget{class_graf_ad6271a1b664eec00682018761ca0437c}{\index{Graf@{Graf}!Rozmiar@{Rozmiar}}
+\index{Rozmiar@{Rozmiar}!Graf@{Graf}}
+\subsubsection[{Rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}const int Graf\-::\-Rozmiar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_graf_ad6271a1b664eec00682018761ca0437c}
+
+
+Definition at line 99 of file graf.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_ade291b5dec10139fdc61a043ebd340ca}{\index{Graf@{Graf}!Sasiedztwo@{Sasiedztwo}}
+\index{Sasiedztwo@{Sasiedztwo}!Graf@{Graf}}
+\subsubsection[{Sasiedztwo}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ int $>$ Graf\-::\-Sasiedztwo (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ade291b5dec10139fdc61a043ebd340ca}
+
+
+Definition at line 87 of file graf.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+
+
+
+
+Here is the caller graph for this function\-:
+
+
+\hypertarget{class_graf_afe6b63700e9e90b4432749a6a4ac14f5}{\index{Graf@{Graf}!Usun\-Krawedz@{Usun\-Krawedz}}
+\index{Usun\-Krawedz@{Usun\-Krawedz}!Graf@{Graf}}
+\subsubsection[{Usun\-Krawedz}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Usun\-Krawedz (
+\begin{DoxyParamCaption}
+\item[{int}]{W1, }
+\item[{int}]{W2}
+\end{DoxyParamCaption}
+)}}\label{class_graf_afe6b63700e9e90b4432749a6a4ac14f5}
+
+
+Definition at line 59 of file graf.\-cpp.
+
+\hypertarget{class_graf_ad46ff4c28754fbaf97702ef5dc1f71fb}{\index{Graf@{Graf}!Usun\-Wierzcholek@{Usun\-Wierzcholek}}
+\index{Usun\-Wierzcholek@{Usun\-Wierzcholek}!Graf@{Graf}}
+\subsubsection[{Usun\-Wierzcholek}]{\setlength{\rightskip}{0pt plus 5cm}bool Graf\-::\-Usun\-Wierzcholek (
+\begin{DoxyParamCaption}
+\item[{int}]{W}
+\end{DoxyParamCaption}
+)}}\label{class_graf_ad46ff4c28754fbaf97702ef5dc1f71fb}
+
+
+Definition at line 69 of file graf.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Klijek/\-Desktop/\-Nowy folder (2)/prj/\hyperlink{graf_8hpp}{graf.\-hpp}\item 
+C\-:/\-Users/\-Klijek/\-Desktop/\-Nowy folder (2)/prj/\hyperlink{graf_8cpp}{graf.\-cpp}\end{DoxyCompactItemize}

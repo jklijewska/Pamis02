@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+\begin{document}
+\begin{titlepage}
+\title{Algorytm A* - Laboratorium nr 9 z PAMSI}
+\author{Justyna Klijewska}
+\date{21 05 2014}
+\maketitle
+\end{titlepage}
+\section{WSTĘP}
+Celem ćwiczenia było zaimplementowanie w istniejącym programie algorytmu wyszukiwania A* i zmierzenie drogi oraz czasów poszczególnych wyszukiwań. Program był pisany w środowisku Windows i została zrealizowana wersja na ocenę 5.
+\section{TEORIA}
+Algorytm A* – algorytm heurystyczny znajdowania najkrótszej ścieżki w grafie ważonym z dowolnego wierzchołka do wierzchołka spełniającego określony warunek zwany testem celu. Algorytm jest zupełny i optymalny, w tym sensie, że znajduje ścieżkę, jeśli tylko taka istnieje, i przy tym jest to ścieżka najkrótsza. Stosowany głównie w dziedzinie sztucznej inteligencji do rozwiązywania problemów i w grach komputerowych do imitowania inteligentnego zachowania. \\
+\section{PRZYKŁADY} 
+ \underline{Przykład 1} \\ \\ \\ \\ \\ \\
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=1]{przyk1.jpg}
+\end{center}
+\end{figure} \\ \\
+W powyższym grafie mamy poniższe wyszukiwania: \\ \begin{itemize}
+\item Przeszukiwanie wszerz: 1 2 3 4    czas:	3056 ns
+\item Przeszukiwanie w głąb: 1 3 4 2    czas:	3779 ns
+\item Przeszukiwanie A* : 1 3 4			czas:	16694 ns
+\\ \\
+\end{itemize}
+\underline{Przykład 2}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=1]{przyk2.jpg}
+\end{center}
+\end{figure}
+\\ \\ \\ \\W powyższym grafie  mamy poniższe wyszukiwania: \\ \begin{itemize}
+\item Przeszukiwanie wszerz: 1 2 3 4 5	czas:	4578 ns
+\item Przeszukiwanie w głąb: 1 2 3 5 4 	czas:	3947 ns
+\item Przeszukiwanie A* : 1 2 3 5		czas:	97 ns\\ \\
+\end{itemize}
+\underline{Przykład 3}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.5]{przyk3.jpg}
+\end{center}
+\end{figure}
+\\ \\ \\ \\W powyższym grafie  mamy poniższe wyszukiwania: \\ \begin{itemize}
+\item Przeszukiwanie wszerz: 1 8 16 13 2 6 15 17 3 4 5 12 7 9 11 18 19 10 14 20	czas:	22238 ns
+\item Przeszukiwanie w głąb: 1 16 2 4 15 13 17 12 18 20 14 9 10 5 7 19 11 6 8 3 	czas:	22231 ns
+\item Przeszukiwanie A* : 1 16 2 4 5 9 14 20		czas:	348 ns\\ \\
+\end{itemize}
+Grafy zostały wygenerowane na stronie http://www.algorytm.org/narzedzia/edytor-grafow.html.
+\section{WNIOSKI}
+Można przyjąć, że A* jest najbardziej efektywnym (najszybszym) algorytmem wyszukiwania ścieżki w grafie. Dzieje się tak dlatego, że zamiast przeszukiwać ślepo po kolei cały graf możemy najmniej prawdopodobną ścieżkę odrzucić (a co się z tym wiąże - znaleźć szybko najkrótszą ścieżkę). Oczywiście od każdej reguły są wyjątki. Jeżeli szukamy najlepszego pod względem wydajności to przy małych ilościach danych BFS i DFS są efektywniejsze. Podobna sytuacja jest wtedy, kiedy szukamy algorytmu najbardziej niezawodnego. W tym przypadku lepiej sprawdzają się algorytmy, które zawsze znajdą ścieżkę, jeśli taka istnieje (np.: DFS). \\
+Jak widać w powyższych pzykładach kiedy nasz graf ma wiele wierzchołków i krawędzi to algorytm A* działa o wiele szybciej niż pozostałe algorytmy.
+
+\end{document}

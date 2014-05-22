@@ -1,0 +1,26 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Graf::DodajKrawedz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#abb79067f8131701f5d42d88206486a5b"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="startTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$czas_8cpp.html#a4fbb2a5fceb3efd577419fc87c6f3d07"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="A_star",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$search_8cpp.html#a0582d2227d49b5aa59a6d71a06c285c6",tooltip="Deklaracja listy A_star. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Graf::Rozmiar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#ad6271a1b664eec00682018761ca0437c"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Graf::Sasiedztwo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#ade291b5dec10139fdc61a043ebd340ca"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Graf::CzyPolaczone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a4546d2b7612f96df3a0ace5bc2c93553"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="endTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$czas_8cpp.html#abd320a48742faf3aa6ad1a7e7c6b518b"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Graf::DFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#a53dbabccd3745e38b45c46e29e301f8e"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Graf::BFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graf.html#aac1325dd0ba799888beee5f93b621192"];
+}

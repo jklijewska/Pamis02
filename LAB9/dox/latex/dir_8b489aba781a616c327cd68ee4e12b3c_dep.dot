@@ -1,0 +1,13 @@
+digraph "C:/Users/Klijek/Desktop/Nowy folder (2)" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_47d29e522f7df2436c16a13c7147de4b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Desktop" fontname="Helvetica", fontsize="10", URL="dir_47d29e522f7df2436c16a13c7147de4b.html"]
+  subgraph clusterdir_8b489aba781a616c327cd68ee4e12b3c {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_8b489aba781a616c327cd68ee4e12b3c.html"];
+    dir_8b489aba781a616c327cd68ee4e12b3c [shape=plaintext label="Nowy folder (2)"];
+    dir_6cedcdea3fe14325444ae820e11cec44 [shape=box label="prj" color="black" fillcolor="white" style="filled" URL="dir_6cedcdea3fe14325444ae820e11cec44.html"];
+  }
+  }
+}
