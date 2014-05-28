@@ -1,0 +1,13 @@
+digraph "C:/Users/Klijek/Desktop/Czyste zło" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_47d29e522f7df2436c16a13c7147de4b {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Desktop" fontname="Helvetica", fontsize="10", URL="dir_47d29e522f7df2436c16a13c7147de4b.html"]
+  subgraph clusterdir_d7c3ea5af9f0290b48c2c5ebdaf2a72e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_d7c3ea5af9f0290b48c2c5ebdaf2a72e.html"];
+    dir_d7c3ea5af9f0290b48c2c5ebdaf2a72e [shape=plaintext label="Czyste zło"];
+    dir_edb72bd3aaf7b5b7d05cb9ec4eaf60d1 [shape=box label="NWP (1)" color="red" fillcolor="white" style="filled" URL="dir_edb72bd3aaf7b5b7d05cb9ec4eaf60d1.html"];
+  }
+  }
+}

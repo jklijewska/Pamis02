@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\selectlanguage{polish}
+\begin{document}
+\begin{titlepage}
+\title{Największy wspólny podciąg - Laboratorium nr 10 z PAMSI}
+\author{Justyna Klijewska}
+\date{28 05 2014}
+\maketitle
+\end{titlepage}
+\section{WSTĘP}
+Celem ćwiczenia było zaimplementowanie algorytmu "Największy wspólny podciąg" (taki został przeze mnie wylosowany).\\
+\section{TEORIA}
+ Algorytm, który wyznacza najdłuższy wspólny podciąg (z ang. LCS - Longest Common Subsequence) dwóch wyrazów, jest przykładem potęgi programowania dynamicznego. Elementy podciągów nie muszą przy tym leżeć obok siebie (tym różni się ten problem od problemu najdłuższego wspólnego podłańcucha, ang. longest common substring).\\
+\section{IMPLEMENTACJA}
+Początkowo pobierane są dane o ilości znaków w naszych podciągach (te z kolei są wczytywane z pliku). Wyświetlana jest ilość wierszy i kolumn tablicy ( o jeden większych niż odpowiednie długości wyrazów), która posłuży do rozwiązania algorytmu. Następnie tworzona jest tablica: \\
+- pierwszy rząd i kolumna wypełnione są zerami \\
+- jeżeli A[i]=B[j] to musimy dodać jeden do (i-1, j-1) \\
+- jesli jednak nie są równe to w (i,j) wpisujemy większą z liczb znajdujących się w komórkach (i-1,j) i (i,j-1).\\ Gdzie A, B -ciągi  i, j- lokalizacja z tablicy \\
+Kiedy już to mamy wystarczy wyświetlić nadłuższy wspólny podciąg.\\ \\ \\ \\ \\ \\ \\ \\ \\
+\section{PRZYKŁADY} 
+ \underline{Przykład 1}
+ \\ 1 ciąg: abaabbaaa      Długość:9\\
+ 	2 ciąg: babab			Długość:5 \\ \\
+ 	Tablica: \\
+ 	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline
+   & &a&b&a&a&b&b&a&a&a \\
+  \hline 
+   &0&0&0&0&0&0&0&0&0&0 \\ \hline
+   b&0&0&1&1&1&1&1&1&1&1\\ \hline
+   a&0&1&1&2&2&2&2&2&2&2 \\ \hline
+  b&0&1&2&2&2&3&3&3&3&3 \\ \hline
+  a&0&1&2&3&3&3&3&4&4&4\\ \hline
+  b&0&1&2&3&3&4&4&4&4&4 \\ \hline
+
+  \end{tabular}
+  \\ Wynik: abab			Długość:4
+  \\ \\ \\ \\ \\
+\underline{Przykład 2}
+ \\ 1 ciąg: justyna      Długość:7\\
+ 	2 ciąg: justa			Długość:5 \\ \\
+ 	Tablica: \\
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+   & &j&u&s&t&y&n&a \\
+  \hline
+   &0&0&0&0&0&0&0&0 \\ \hline
+   j&0&1&1&1&1&1&1&1\\ \hline
+   u&0&1&2&2&2&2&2&2 \\ \hline
+  s&0&1&2&3&3&3&3&3 \\ \hline
+  t&0&1&2&3&4&4&4&4\\ \hline
+  a&0&1&2&3&4&4&4&5 \\ \hline
+  
+  \end{tabular}
+  \\\\ Wynik: justa			Długość:5
+  \\ \\ \\ \\ \\ \\ \\ \\
+\underline{Przykład 3}
+ \\ 1 ciąg: co66533      Długość:7\\
+ 	2 ciąg: cos13			Długość:5 \\ \\
+ 	Tablica: \\
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+   & &c&o&6&6&5&3&3 \\
+  \hline
+   &0&0&0&0&0&0&0&0 \\ \hline
+   c&0&1&1&1&1&1&1&1\\ \hline
+   o&0&1&2&2&2&2&2&2 \\ \hline
+   s&0&1&2&2&2&2&2&2 \\ \hline
+   1&0&1&2&2&2&2&2&2\\ \hline
+   3&0&1&2&2&2&2&3&3 \\ \hline
+  
+  \end{tabular}
+  \\\\ Wynik: co3			Długość:3
+  \\ \\ \\ \\ \\
+
+
+\section{WNIOSKI}
+\begin{itemize}
+\item Dzięki zastosowaniu dynamicznego programowania możemy zyskać większą efektywność - przez dzielenie problemu na mniejsze problemy. 
+\item W odróżnieniu od techniki dziel i zwyciężaj (którą poznaliśmy przy sortowaniu) w programowaniu dynamicznym problemy nie są rozłączne.
+\item Złożoność obliczeniowa algorytmu to O(n*m), gdzie n i m to długości ciągów.
+\item Istnieje wiele sposób "udoskonalenia" tej złożoności obliczeniowej. Przy tak małych ciągach nie będzie miało to większej różnicy, jednak przy większych warto pomyśleć o optymalizacji. Może nią być np.: nie przechowywanie w pamięci niepotrzebnych elementów tablicy (od 0 do i-2). Wtedy nasza złożoność wyniesie O(2*m).
+\item Rozwiązanie tego problemu jest bardzo przydatne przy pisaniu programów mających na celu wykrycie zmian w dokumentach lub plikach, lub przy pisaniu programów służących do identyfikacji plagiatów.
+\end{itemize}
+\end{document}

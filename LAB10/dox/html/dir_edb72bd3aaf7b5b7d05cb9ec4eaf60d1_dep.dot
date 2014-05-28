@@ -1,0 +1,13 @@
+digraph "C:/Users/Klijek/Desktop/Czyste zło/NWP (1)" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d7c3ea5af9f0290b48c2c5ebdaf2a72e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Czyste zło" fontname="Helvetica", fontsize="10", URL="dir_d7c3ea5af9f0290b48c2c5ebdaf2a72e.html"]
+  subgraph clusterdir_edb72bd3aaf7b5b7d05cb9ec4eaf60d1 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_edb72bd3aaf7b5b7d05cb9ec4eaf60d1.html"];
+    dir_edb72bd3aaf7b5b7d05cb9ec4eaf60d1 [shape=plaintext label="NWP (1)"];
+    dir_7133354f274197e1603ae0eef80249e9 [shape=box label="prj" color="black" fillcolor="white" style="filled" URL="dir_7133354f274197e1603ae0eef80249e9.html"];
+  }
+  }
+}

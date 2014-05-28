@@ -1,0 +1,17 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$plik_8cpp.html#a25526dd8d4962bb270d7624259908375"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="NWP::StworzMacierz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_w_p.html#ae0aaa6a999db3f603dd28b0da542fa4b",tooltip="Metoda StwórzMacierzo. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="NWP::WyliczMacierz",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_w_p.html#afe5dc36db9484f514d430849e58e7a35",tooltip="Metoda WyliczMacierz. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="NWP::Show",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_w_p.html#ab5c8ae72014d66dd986a9bd3bd026ac0",tooltip="Metoda Show. "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="NWP::OdtworzNWP",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_n_w_p.html#a9707ef2249c40612e1f799f0fa58bdd1",tooltip="Metoda OdtworzNWP. "];
+}
